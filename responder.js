@@ -30,7 +30,7 @@ app.post('/', function(req, res) {
     } else {
         twiml.message('No Body param match, Twilio sends this in the request to your server.');
     }
-    res.writeHead(200, {'Content-Type': 'text/xml'});
+    res.writeHead(200, {'Content-Type': 'text/html'});
     res.end(twiml.toString());
 });
 
