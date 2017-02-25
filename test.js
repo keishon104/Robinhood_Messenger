@@ -1,4 +1,4 @@
-var credentials = require("../credentials.js")();
+var credentials = require("./credentials.js");
 var Robinhood = require('robinhood')(credentials, function(){
     Robinhood.investment_profile(function(err, response, body){
         if(err){
