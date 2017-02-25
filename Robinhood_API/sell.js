@@ -1,11 +1,12 @@
+var credentials = require("./credentials");
 var Robinhood = require('robinhood')(credentials, function(){
     var options = {
         type: 'limit',
         quantity: 1,
         bid_price: 1.00,
         instrument: {
-            url: String,
-            symbol: String
+            url: "https:\/\/api.robinhood.com\/instruments\/1e513292-5926-4dc4-8c3d-4af6b5836704\/",
+            symbol: "SNAP"
         },
         // // Optional:
         // trigger: String, // Defaults to "gfd" (Good For Day)

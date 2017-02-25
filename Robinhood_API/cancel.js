@@ -1,3 +1,4 @@
+var credentials = require("./credentials");
 var Robinhood = require('robinhood')(credentials, function(){
     //Get list of orders
     Robinhood.orders(function(error, response, body){
