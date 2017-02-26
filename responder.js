@@ -2,7 +2,10 @@ var http = require('http'),
     express = require('express'),
     twilio = require('twilio'),
     bodyParser = require('body-parser'),
-    cancel=require('./Robinhood_API/cancel');
+    buy = require('./Robinhood_API/buy'),
+    sell = require('./Robinhood_API/sell'),
+    cancel = require('./Robinhood_API/cancel');
+
 
 
 
