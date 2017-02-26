@@ -7,8 +7,6 @@ var http = require('http'),
     cancel = require('./Robinhood_API/cancel');
 
 
-
-
 var app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.get('/', function(req, res) {
@@ -20,7 +18,6 @@ app.get('/', function(req, res) {
         twiml.message('Goodbye');
     } else if(req.query.Body == 'cancel order') {
         cancel();
-
     } else {
         twiml.message('No Body param match, Twilio sends this in the request to your server.');
     }
@@ -52,6 +49,7 @@ app.post('/', function(req, res) {
 
 app.post('/myaction', function(req, res) {
   var twilio = require('twilio');
+  var twiml = new twilio.TwimlResponse();
   res.send('You sent the number "' + req.body.number + '"" Check your message to begin' +  '.');
   console.log(req.body.number);
 
