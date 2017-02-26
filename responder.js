@@ -47,6 +47,11 @@ app.post('/', function(req, res) {
     res.end(twiml.toString());
 });
 
+app.post('/myaction', function(req, res) {
+  res.send('You sent the name "' + req.body.name + '".');
+  console.log(req.body.name);
+});
+
 http.createServer(app).listen(1337, function () {
     console.log("Express server listening on port 1337");
 });
