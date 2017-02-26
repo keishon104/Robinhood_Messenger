@@ -7,8 +7,8 @@ module.exports = () =>{
           quantity: 1,
           bid_price: 10.00,
           instrument: {
-              url: "https:\/\/api.robinhood.com\/instruments\/1e513292-5926-4dc4-8c3d-4af6b5836704\/",
-              symbol: "SNAP"
+              url: "https:\/\/api.robinhood.com\/instruments\/76a86e29-de0e-487c-9a0e-8cc280db7e49\/",
+              symbol: "XNYS"
           }
           // // Optional:
           // trigger: String, // Defaults to "gfd" (Good For Day)
