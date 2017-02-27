@@ -1,3 +1,3 @@
-SMS Robinhood Trading will allow everyone to trade anywhere. 
+Using Twilio API and the unofficial Robinhood API you can send buy, sell and cancel orders to your account without using internet.
 
-Currently you are only able to setup sell orders once you have bought the stock. This program will allow individuals to buy and sell stocks using texts to their robinhood account.
+Once perfected this concept can be implemented in other areas such as cryptocurrency, emergency repsonse, etc.
