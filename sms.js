@@ -1,10 +1,10 @@
 var client = require ('twilio')(
-  "AC1d788d4c3f95aa90db841a3d6070a1f1",
-  "a83255c2c333e438b3f23d629e9d9c1c"
+  "ACXXXXXXXXXXXXXXXXX",
+  "your_auth_token"
 );
 client.messages.create({
-  from: "13868884332",
-  to: "3865069094",
+  from: "TWILIO_PHONE_NUMBER",
+  to: "SENDING_PHONE_NUMBER",
   body: "You are ready to connect to Robinhood js!!!"
 }, function(err, message) {
   if(err) {
